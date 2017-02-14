@@ -5,40 +5,61 @@ C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
 function Sumar () 
 {
-var numerouno
-var numerodos
-var numerotres
+var precioUno
+var precioDos
+var precioTres
+var precioTotal
 
-numerouno=document.getElementById('PrecioUno').value
-numerodos=document.getElementById('PrecioDos').value
-numerotres=document.getElementById('PrecioTres').value
+precioUno=document.getElementById('PrecioUno').value
+precioDos=document.getElementById('PrecioDos').value
+precioTres=document.getElementById('PrecioTres').value
 
-alert (parseInt (numerouno) + parseInt (numerodos) + parseInt (numerotres));
+precioUno=parseInt(precioUno);
+precioDos=parseInt(precioDos);
+precioTres=parseInt(precioTres);
 
+precioTotal = precioUno+precioDos+precioTres;
+
+alert (precioTotal)
 }
+
 function Promedio () 
 {
-var numerouno
-var numerodos
-var numerotres
+var precioUno
+var precioDos
+var precioTres
+var promedioTotal
 
-numerouno=document.getElementById('PrecioUno').value
-numerodos=document.getElementById('PrecioDos').value
-numerotres=document.getElementById('PrecioTres').value
+precioUno=document.getElementById('PrecioUno').value
+precioDos=document.getElementById('PrecioDos').value
+precioTres=document.getElementById('PrecioTres').value
 
-alert (parseInt (numerouno) % parseInt (numerodos) % parseInt (numerotres));
+precioUno=parseInt(precioUno);
+precioDos=parseInt(precioDos);
+precioTres=parseInt(precioTres);
+
+promedioTotal = (precioUno+precioDos+precioTres)/3;
+
+alert (promedioTotal)
 	
 }
 function PrecioFinal () 
 {
-var numerouno
-var numerodos
-var numerotres
+var precioUno
+var precioDos
+var precioTres
+var precioFinal
 
-numerouno=document.getElementById('PrecioUno').value
-numerodos=document.getElementById('PrecioDos').value
-numerotres=document.getElementById('PrecioTres').value
+precioUno=document.getElementById('PrecioUno').value
+precioDos=document.getElementById('PrecioDos').value
+precioTres=document.getElementById('PrecioTres').value
 
-alert (parseInt (numerouno) + parseInt (numerodos) + parseInt (numerotres) * 0.75
-	
+precioUno=parseInt(precioUno);
+precioDos=parseInt(precioDos);
+precioTres=parseInt(precioTres);
+
+precioFinal = ((precioUno+precioDos+precioTres)*21)/100;
+precioFinal = precioFinal+precioUno+precioDos+precioTres
+
+alert (precioFinal)
 }
