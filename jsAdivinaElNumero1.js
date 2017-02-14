@@ -19,8 +19,9 @@ function comenzar()
 	console.log(numeroSecreto);
 	contadorIntentos=(0);
 	document.getElementById('intentos').value = contadorIntentos	 
-	
-
+/*se crea el numero secreto random con math.floor entre 1 y 100
+luego con console.log lo mostramos en consola para verificar, luego
+establezco el contador en 0 y saco el mismo con getelement*/
 }
 
 function verificar()
@@ -43,6 +44,7 @@ function verificar()
 	{
 		alert ("Te pasaste")
 	}
-
+/* agrego +1 cada vez que intento encontrar el numero, y luego 
+con if creo las alertas para ver si el ejercicio se realizo bien*/
 
 }
